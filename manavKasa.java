@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class manavKasa {
 	
-	public static float toplam(int armut, int elma, int domates, int muz, int patlican) {
+	public static float total(int pear, int apple, int tomato, int banana, int aubergine) {
 		
-		float armutKg = (float) (armut * 2.14);
-		float elmaKg = (float) (elma * 3.67);
-		float domatesKg = (float) (domates * 1.11);
-		float muzKg = (float) (muz * 0.95);
-		float patlicanKg = (float) (patlican * 5.00);
-		float toplam = armutKg + elmaKg + domatesKg + muzKg + patlicanKg;
+		float pearPrice = (float) (pear * 2.14);
+		float applePrice = (float) (apple * 3.67);
+		float tomatoPrice = (float) (tomato * 1.11);
+		float bananaPrice = (float) (banana * 0.95);
+		float auberginePrice = (float) (aubergine * 5.00);
+		float totalPrice = pearPrice + applePrice + tomatoPrice + bananaPrice + auberginePrice;
 		
-		return toplam;
+		return totalPrice;
 		
 	}
 
@@ -22,17 +22,17 @@ public class manavKasa {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.println("Armut kaç kilo ? : ");	
-		int armut = scanner.nextInt();
+		int pearKg = scanner.nextInt();
 	    System.out.println("Elma kaç kilo ? : ");	 
-		int elma = scanner.nextInt();
+		int appleKg = scanner.nextInt();
 	    System.out.println("Domates kaç kilo ? : ");	 
-		int domates = scanner.nextInt();
+		int tomatoKg = scanner.nextInt();
 	    System.out.println("Muz kaç kilo ? : ");	 
-		int muz = scanner.nextInt();
+		int bananaKg = scanner.nextInt();
 	    System.out.println("Patlıcan kaç kilo ? : ");	 
-		int patlican = scanner.nextInt();
+		int aubergineKg = scanner.nextInt();
 		
-		System.out.println("Toplam tutar : " + toplam(armut, elma, domates, muz, patlican));
+		System.out.println("Toplam tutar : " + total(pearKg, appleKg, tomatoKg, bananaKg, aubergineKg));
 		
 	}
 }
